@@ -1,0 +1,86 @@
+%!TEX output_directory = aux_dir
+
+\documentclass[a5paper, norsk, 10pt, twoside]{article}
+\usepackage[norsk]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{fullpage}
+\usepackage{ulem}
+\usepackage[hyperfootnotes=false, hidelinks]{hyperref}
+\usepackage[parfill]{parskip}
+\usepackage{wrapfig}
+\usepackage{textcomp, gensymb}
+\linespread{1.0}
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{mdframed}
+%\usepackage{svg}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable, skins}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{xcolor, colortbl}
+\usepackage{fontspec}
+\usepackage{newunicodechar}
+\usepackage{todonotes}
+\usepackage{multicol}
+\usepackage{vwcol}
+\usepackage{subfiles}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[section]{placeins}
+\usepackage[makeroom]{cancel}
+\mathtoolsset{showonlyrefs=true}
+
+
+\newcommand{\dd}{{\rm d}}
+\newcommand{\ee}{{\rm e}}
+\newcommand{\ii}{{\rm i}}
+\newcommand{\degr}{^\circ}
+\newcommand{\partl}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\deriv}[2]{\frac{\dd#1}{\dd#2}}
+
+\newtcbox{\zkp}[1][]{enhanced, colframe=black, colback=blue!40!white, boxrule=1pt,
+       nobeforeafter, tcbox raise base, size=fbox, fontupper=\scriptsize, left*=1mm, right*=1mm, #1}
+
+%\newcommand{\sectionbreak}{\clearpage}
+
+
+\graphicspath{{images/}{../images/}}
+
+
+\hyphenpenalty3000
+
+\widowpenalties 1 10000
+\raggedbottom
+
+\title{Stjernevisning om sommeren}
+\author{Peter Kristoffersen}
+\date{Sist oppdatert \today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+\subfile{tex/generelt}
+\newpage
+\subfile{tex/ressurser}
+\newpage
+\subfile{tex/sommertriangelet}
+\newpage
+\subfile{tex/planeter}
+\newpage
+\subfile{tex/romfartoy}
+\newpage
+\subfile{tex/diverse}
+\newpage
+\subfile{tex/oversikt}
+
+\end{document}
